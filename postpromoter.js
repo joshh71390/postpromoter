@@ -139,7 +139,7 @@ function startProcess() {
       }
 
       // We are at 100% voting power - time to vote!
-      if (vp >= 10000 && outstanding_bids.length > 0 && round_end_timeout < 0) {
+      if (vp >= 8000 && outstanding_bids.length > 0 && round_end_timeout < 0) {
         round_end_timeout = setTimeout(function() {
           round_end_timeout = -1;
 
