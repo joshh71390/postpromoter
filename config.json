@@ -8,28 +8,28 @@
   ],
   "backup_mode": false,
   "disabled_mode": false,
-  "detailed_logging": false,
-  "owner_account": "bot_owner_account_name",
-  "account": "your_bot_account_name",
-  "memo_key": "your_private_memo_key",
-  "posting_key": "your_private_posting_key",
-  "active_key": "your_private_active_key",
-  "auto_claim_rewards" : true,
-  "post_rewards_withdrawal_account": "withdraw_liquid_post_rewards_to_account",
-  "min_bid": 0.1,
-  "max_bid": 50,
+  "detailed_logging": true,
+  "owner_account": "",
+  "account": "steemegg",
+  "memo_key": "",
+  "posting_key": "",
+  "active_key": "",
+  "auto_claim_rewards" : false,
+  "post_rewards_withdrawal_account": "",
+  "min_bid": 0.005,
+  "max_bid": 0.02,
   "max_bid_whitelist": 999,
   "batch_vote_weight": 100,
   "min_post_age": 20,
   "max_post_age": 84,
   "allow_comments": false,
-  "currencies_accepted": ["SBD", "STEEM"],
-  "refunds_enabled": true,
-  "min_refund_amount": 0.002,
-  "no_refund": ["bittrex", "poloniex", "openledger", "blocktrades", "minnowbooster", "ginabot"],
+  "currencies_accepted": ["STEEM"],
+  "refunds_enabled": false,
+  "min_refund_amount": 0.005,
+  "no_refund": ["dlease", "bittrex", "poloniex", "openledger", "blocktrades", "minnowbooster", "ginabot"],
   "comment_location": "comment.md",
-  "max_per_author_per_round": 1,
-  "price_source": "bittrex",
+  "max_per_author_per_round": 2,
+  "price_source": "coincap",
   "blacklist_settings": {
     "flag_signal_accounts": ["spaminator", "cheetah", "steemcleaners", "mack-bot"],
     "blacklist_location": "blacklist",
@@ -37,23 +37,23 @@
     "whitelist_location": "",
     "whitelist_only": false,
     "refund_blacklist": false,
-    "blacklist_donation_account": "steemcleaners",
+    "blacklist_donation_account": "",
 		"blacklisted_tags": ["nsfw"],
 		"global_api_blacklists": ["buildawhale", "steemcleaners", "minnowbooster"]
   },
   "auto_withdrawal": {
-    "active": true,
+    "active": false,
     "accounts": [
       {
         "name": "$delegators",
-        "stake": 8000,
+        "stake": 0,
         "overrides": [
           { "name": "delegator_account", "beneficiary": "beneficiary_account" }
         ]
       },
       {
         "name": "yabapmatt",
-        "stake": 2000
+        "stake": 0
       }
     ],
     "frequency": "daily",
@@ -61,10 +61,10 @@
     "memo": "# Daily Earnings - {balance} | Thank you!"
   },
   "affiliates": [
-    { "name": "memo_prefix", "fee_pct": 150, "beneficiary": "payout_account" }
+    { "name": "memo_prefix", "fee_pct": 150, "beneficiary": "" }
   ],
   "api": {
-    "enabled": true,
+    "enabled": false,
     "port": 3000
   },
   "transfer_memos": {
