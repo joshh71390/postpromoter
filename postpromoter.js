@@ -24,7 +24,7 @@ var version = '2.1.1';
 var client = null;
 var rpc_node = null;
 
-const AUTHOR_PCT = 0.5;
+const AUTHOR_PCT = 0.0;
 
 startup();
 
