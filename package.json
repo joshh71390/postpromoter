@@ -1,6 +1,6 @@
 {
-  "name": "postpromoter",
-  "version": "2.1.1",
+  "name": "steemegg",
+  "version": "0.0.1",
   "description": "Steem bid-based voting bot written in JavaScript",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MattyIce/postpromoter.git"
+    "url": "git+https://github.com/joshh71390/postpromoter.git"
   },
   "author": "yabapmatt",
   "license": "MIT",
